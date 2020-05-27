@@ -10,11 +10,22 @@
 `Git`은 `local`(각 컴퓨터)에 설치해 소스코드 관리가 가능한 프로그램  
 `Github`은 `remote`(원격) 저장소가 있는 외부서버  
 
+## Git 다운로드  
+### Windows  
+https://git-scm.com/downloads  
+Windows를 눌러서 본인 운영체제에 맞는 `git`을 다운로드하시면 됩니다.  
+
+### Mac  
+`brew`를 이용합니다.  
+```bash
+$ brew install git
+```
+
 ## Git 기본설정  
-`local`에서 처음 `git`을 사용할 경우, 사용자 등록을 해 주어야 한다.  
+`local`에서 처음 `git`을 사용할 경우, 사용자 등록을 해 주어야 합니다.  
 1. `Git Bash` 혹은 `terminal` 실행  
-2. 본인의 `Github 계정 이메일`과 본인 `영문이름`(Github 아이디 X)을 적기  
-큰따옴표도 적어야 한다!  
+2. 본인의 `Github 계정 이메일`과 본인 `영문이름`(Github 아이디 X)을 적어주세요.  
+큰따옴표도 적어야 합니다!  
 ```bash
 $ git config --global user.email "[Github 계정 이메일]"
 $ git config --global user.name "[본인 영문이름]"
@@ -23,7 +34,7 @@ $ git config --global user.name "[본인 영문이름]"
 ## Git 필수 명령어  
 ### init  
 해당 디렉토리(폴더)에 git 초기화(initializing)  
-버전 관리를 시작하겠다는 의미로, 한 번만 해 주면 됨  
+버전 관리를 시작하겠다는 의미로, 한 번만 해 주면 됩니다.  
 ```bash
 $ git init
 ```
@@ -91,8 +102,8 @@ $ git push origin master
 ```
 
 ### commit과 push의 차이?  
-`commit`은 `local` 작업폴더에 버전(history)을 쌓는 것이어서 외부망(internet)을 사용하지 않음  
-`push`는 `Github` 등의 `remote` 저장소에 버전(history)를 쌓는 것이어서 외부망(internet)이 필요함  
+`commit`은 `local` 작업폴더에 버전(history)을 쌓는 것이어서 외부망(internet)을 사용하지 않습니다.  
+`push`는 `Github` 등의 `remote` 저장소에 버전(history)를 쌓는 것이어서 외부망(internet)이 필요합니다.  
 
 ### reset  
 가장 최근 `commit` 지우기  
