@@ -9,7 +9,7 @@
 ### 2주차(05.20)  
 - 아이디어 발표  
 
-### 3주차(05.27)  
+### [3주차(05.27)](https://github.com/JuYeong0413/2020-dongguk-likelion/tree/master/1st-semester/week03)  
 - 로컬에 Django 개발환경 설정하기  
-- 필수 Linux 명령어  
+- [자주 사용하는 Linux 명령어](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week03/linux-commands.md)  
 
