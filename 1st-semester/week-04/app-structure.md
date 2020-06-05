@@ -46,7 +46,7 @@ firstproject/
 ```
 
 ### migrations/ 디렉토리  
-`Django`의 `MVC` 중 `M`, `Model` 부분과 관련되어 있습니다. 모델을 만들고 수정할때마다 자동으로 데이터베이스를 업데이트하는 파일들이 저장되는 디렉토리입니다.  
+`Django`의 `MTV` 중 `M`, `Model` 부분과 관련되어 있습니다. 모델을 만들고 수정할때마다 자동으로 데이터베이스를 업데이트하는 파일들이 저장되는 디렉토리입니다.  
 `migrations/` 디렉토리에 있는 `__init__.py` 파일 역시 이전에 설명드린 것처럼 해당 디렉토리를 `Python` 패키지로 인식하게 하는 용도의 빈 파일입니다.  
 
 ### __init__.py
@@ -76,7 +76,7 @@ from django.db import models
 
 # Create your models here.
 ```
-`Django`의 `MVC` 중 `M`, `Model`에 대한 정보를 정의하고 저장하는 파일입니다.  
+`Django`의 `MTV` 중 `M`, `Model`에 대한 정보를 정의하고 저장하는 파일입니다.  
 
 ### tests.py  
 ```python
@@ -92,4 +92,4 @@ from django.shortcuts import render
 
 # Create your views here.
 ```
-`Django`의 `MVC` 중 `V`, 앱에 대한 `Views`를 설정하는 파일입니다.  
+`Django`의 `MTV` 중 `V`, 앱에 대한 `Views`를 설정하는 파일입니다.  
