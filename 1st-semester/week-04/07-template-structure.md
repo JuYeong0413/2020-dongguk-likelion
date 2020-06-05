@@ -1,5 +1,5 @@
 # 앱의 template 구조
-앞서 [HTML 페이지 띄우기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-04/page.md#html-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%9D%84%EC%9A%B0%EA%B8%B0)에서  
+앞서 [HTML 페이지 띄우기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-04/04-page.md#template)에서  
 > 앱 디렉토리인 `firstapp/` 안에 `templates` 폴더를 만들어줍시다. 그리고 `templates` 폴더 안에 앱 이름과 동일한 `firstapp`이라는 폴더를 만들어줍니다. 우리가 앞으로 앱에서 작성할 `html` 파일은 모두 `앱/templates/앱이름/` 디렉토리에 작성할 거에요.  
 
 라고 말씀드렸는데요, `templates/` 디렉토리 안에 또다시 `firstapp/`이라는 폴더를 만들어서 `html` 파일을 작성하는 이유에 대한 설명을 지금 해드리려고 합니다.  
