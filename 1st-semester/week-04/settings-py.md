@@ -68,14 +68,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 ```
-현재 `Django` 프로젝트에서 활성화되어 있는 `Django` 앱의 목록입니다.  
+현재 `Django` 프로젝트에서 활성화되어 있는 `Django` 애플리케이션의 목록입니다.  
 기본적으로 6개의 애플리케이션이 포함되어 있습니다.  
 - `django.contrib.admin`: 관리자 사이트  
 - `django.contrib.auth`: 인증 시스템  
 - `django.contrib.contenttypes`: content type을 위한 프레임워크  
 - `django.contrib.sessions`: session 프레임워크  
 - `django.contrib.messages`: messaging 프레임워크  
-- `django.contrib.staticfiles`: static files를 관리하기 위한 프레임워크  
+- `django.contrib.staticfiles`: static files를 관리하는 프레임워크  
 
 개발을 하면서 앱을 새로 만들거나, 추가적으로 사용하고자 하는 앱이 있다면 이 부분에 적어주시면 됩니다.  
 
