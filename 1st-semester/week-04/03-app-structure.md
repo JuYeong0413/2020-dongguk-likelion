@@ -69,7 +69,7 @@ from django.apps import AppConfig
 class FirstappConfig(AppConfig):
     name = 'firstapp'
 ```
-앞서 [앱 등록](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-04#app-%EB%93%B1%EB%A1%9D)부분에서 알려드린 `FirstappConfig`가 이 부분입니다. 앱에 대한 기본 설정 정보를 담고 있는 파일이라고 생각하시면 됩니다.  
+앞서 [앱 등록](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-04/03-app-structure.md#app-%EB%93%B1%EB%A1%9D)부분에서 알려드린 `FirstappConfig`가 이 부분입니다. 앱에 대한 기본 설정 정보를 담고 있는 파일이라고 생각하시면 됩니다.  
 
 ### models.py  
 ```python
