@@ -36,5 +36,5 @@ firstproject/
 사용자가 접근하는 웹사이트의 `url`과 `view`의 연결을 지정해줍니다. 이 파일에는 모든 `url` 매핑 코드가 포함될 수 있지만, 일반적으로 앱 단위로 `url`을 관리하는 것을 권장합니다.  
 
 ## wsgi.py  
-`WSGI`는 `Web Server Gatewy Interface`의 약자로, `Python`의 표준 Gateway Interface 입니다. 현재 `Django` 프로젝트를 서비스하기 위한 `WSGI` 호환 웹 서버의 진입점이라고 하는데요, 이것 또한 지금은 깊게 알아둘 필요는 없습니다. 사이트 배포단계에서 자세하게 알려드릴게요.  
+`WSGI`는 `Web Server Gatewy Interface`의 약자로, `Python`의 표준 Gateway Interface 입니다. 현재 `Django` 프로젝트를 서비스하기 위한 `WSGI` 호환 웹 서버의 진입점이라고 하는데요, 웹 서버와 `Django` 애플리케이션 사이의 통신 역할을 담당한다는 정도로 알아두시면 되겠습니다. 웹 서버가 사용자의 역할을 적절하게 해성해서 `Django`로 구동되고 있는 웹 서비스에 전달해줄 때 중간 역할을 하는 부분입니다. 이것 또한 지금은 깊게 알아둘 필요는 없으니 너무 혼란스러워하지 않으셔도 됩니다.  
 
