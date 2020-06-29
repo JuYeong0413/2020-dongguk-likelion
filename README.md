@@ -26,8 +26,9 @@
   - [왜 app_name을 설정해줘야 하나요:question:](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-04/06-app-name.md#%EC%99%9C-app_name%EC%9D%84-%EC%84%A4%EC%A0%95%ED%95%B4%EC%A4%98%EC%95%BC-%ED%95%98%EB%82%98%EC%9A%94question)  
 - [앱의 template 구조](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-04/07-template-structure.md)  
 
-### [5주차(06.10)]()  
-- [Django 모델링]()  
+### [5주차(06.10)](https://github.com/JuYeong0413/2020-dongguk-likelion/tree/master/1st-semester/week-05)  
+- [Django 모델링](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-05/01-modeling.md)  
+- [Django ORM]()  
 - [Django admin 사용하기]()  
 
 ## [여름방학]()  
