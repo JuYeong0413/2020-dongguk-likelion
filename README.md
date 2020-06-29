@@ -28,7 +28,8 @@
 
 ### [5주차(06.10)](https://github.com/JuYeong0413/2020-dongguk-likelion/tree/master/1st-semester/week-05)  
 - [Django 모델링](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-05/01-modeling.md)  
-- [Django ORM]()  
-- [Django admin 사용하기]()  
+- [Django ORM](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-05/02-ORM.md)  
+- [Django admin 사용하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-05/03-admin-page.md)  
 
-## [여름방학]()  
+## [여름학기]()  
+### [1주차(07.01)]()  
