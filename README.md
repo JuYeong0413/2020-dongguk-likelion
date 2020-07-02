@@ -1,5 +1,5 @@
 # 2020-dongguk-likelion  
-:lion: 2020 동국대학교 멋쟁이사자처럼 8기 강의자료  
+:lion: 2020 동국대학교 멋쟁이사자처럼 8기 복습자료  
 
 ## [1학기](https://github.com/JuYeong0413/2020-dongguk-likelion/tree/master/1st-semester)  
 ### [1주차(04.29)](https://github.com/JuYeong0413/2020-dongguk-likelion/tree/master/1st-semester/week-01)  
@@ -31,5 +31,9 @@
 - [Django ORM](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-05/02-ORM.md)  
 - [Django admin 사용하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-05/03-admin-page.md)  
 
-## [여름학기]()  
-### [1주차(07.01)]()  
+## [여름학기](https://github.com/JuYeong0413/2020-dongguk-likelion/tree/master/summer-semester)  
+### [1주차(07.01)](https://github.com/JuYeong0413/2020-dongguk-likelion/tree/master/summer-semester/week-01)  
+- [extends로 html 확장하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-01/01-extends.md)  
+- [include로 html 관리하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-01/02-include.md)  
+- [static 파일 관리하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-01/03-static.md)  
+
