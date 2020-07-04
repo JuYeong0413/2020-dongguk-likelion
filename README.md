@@ -44,3 +44,9 @@
   - [include로 html 관리하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-01/02-include.md)  
   - [static 파일 관리하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-01/03-static.md)  
 </details>
+
+<details>
+  <summary>기타 Tips</summary>
+  
+  - [Visual Studio Code Live Share 사용하기](https://www.notion.so/VS-Code-Live-Share-015fe6e3e291487d9459efe69fdfab0e)  
+</details>
