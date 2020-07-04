@@ -48,5 +48,5 @@
 <details>
   <summary>기타 Tips</summary>
   
-  - [Visual Studio Code Live Share 사용하기](https://www.notion.so/VS-Code-Live-Share-015fe6e3e291487d9459efe69fdfab0e)  
+  - [Visual Studio Code 화면 공유하기(Live Share)](https://www.notion.so/VS-Code-Live-Share-015fe6e3e291487d9459efe69fdfab0e)  
 </details>
