@@ -192,3 +192,26 @@ urlpatterns = [
 `posts`에 담겨진 각각의 객체를 `post`로 하나씩 꺼내 반복문이 돌아간다고 생각하시면 됩니다.  
 각각의 `post`의 속성에 접근하려면 `ORM`에서 사용하 방법처럼 점(`.`)을 사용하고, html에 변수가 표시되게 하려면 두 개의 중괄호(`{{ }}`)를 이용합니다.  
 
+### myblog/templates/shared/_navbar.html  
+```html
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'main' %}">My Blog</a>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'main' %}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'introduction:profile' %}">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'posts:main' %}">Post</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'posts:new' %}">New</a>
+        </li>
+    </div>
+</nav>
+```
+`new`로 연결하는 부분 위에 `posts`의 `main`으로 연결해주는 링크를 추가해 줄게요.  
