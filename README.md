@@ -43,6 +43,13 @@
   - [extends로 html 확장하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-01/01-extends.md)  
   - [include로 html 관리하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-01/02-include.md)  
   - [static 파일 관리하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-01/03-static.md)  
+  
+  ### [2주차(07.08)](https://github.com/JuYeong0413/2020-dongguk-likelion/tree/master/summer-semester/week-02)  
+  - [HTTP 메서드](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-02/01-HTTP-methods.md)  
+  - [Python 자료형-딕셔너리(dictionary)](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-02/02-python-dictionary.md)  
+  - [Post 작성 페이지 만들기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-02/03-new.md)  
+  - [Create 기능 구현](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-02/04-create.md)  
+  - [Read 기능 구현](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-02/05-read.md)  
 </details>
 
 <details>
