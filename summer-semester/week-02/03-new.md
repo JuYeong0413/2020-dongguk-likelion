@@ -27,6 +27,13 @@
 </div>
 {% endblock %}
 ```
+`form`에서 `{% csrf_token %}` 부분에 주목해 주세요.  
+`Django`에서는 기본적으로 `CSRF` 토큰을 이용해 `CSRF` 공격을 방지합니다.  
+`CSRF(Cross Site Request Forgery)` 공격이란, 사용자가 자신의 의지와는 무관하게 공격자가 의도하는 행위를 특정 웹사이트에 요청하게 만드는 공격입니다.  
+`Django`에서는 이에 대응하기 위해서 `CsrfViewMiddleware`를 사용합니다. `settings.py`의 `MIDDLEWARE` 부분에 `'django.middleware.csrf.CsrfViewMiddleware',`가 있죠.  
+
+사용자의 요청이 서버로 넘어가 `view`에 도달하기 전에 토큰값을 확인하고 해당 값이 유효한지 확인하게 되는데요, 여기서 `{% csrf_token %}` 태그를 통해 토큰값을 생성하는 것입니다.  
+`POST` 방식을 사용할 때 반드시 `{% csrf_token %}`을 `form`에 넣어주어야 한다는 점을 기억해 주세요. 태그를 넣지 않으면 에러가 발생합니다.  
 
 <details>
   <summary><b>HTML 태그 설명</b></summary>
@@ -38,7 +45,7 @@
   이런 양식을 사용하기 위해서는 `form` 태그가 필요한데요, 글을 작성할 때 제목과 내용을 입력하는 것도 하나의 `form`이고 로그인을 할 때 아이디와 비밀번호를 입력하는 것도 하나의 `form`이라고 볼 수 있습니다. 한 마디로 정보를 묶어서 보내는 태그라고 생각하시면 됩니다.  
 
   `form` 태그는 다양한 속성을 가지지만, 그 중에서 `action`과 `method`는 필수로 지정해야 하는 중요한 속성입니다.  
-  - `action`: 데이터를 어디로 보낼 것인가? URL을 입력하는 부분  
+  - `action`: 데이터를 어디로 보낼 것인가? `form`이 제출(submit)될 때 데이터를 전달받는 곳의 URL을 입력하는 부분  
   - `method`: 데이터를 어떤 방식으로 보낼 것인가? HTTP 메서드를 입력하는 부분(GET, POST, ...)  
   참고로 html에서 관리하는 기본 방식은 모두 `GET`입니다.  
 
