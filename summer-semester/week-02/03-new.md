@@ -27,13 +27,21 @@
 </div>
 {% endblock %}
 ```
-`form`에서 `{% csrf_token %}` 부분에 주목해 주세요.  
+#### csrf_token
+`form`안에 있는 `{% csrf_token %}` 부분에 주목해 주세요.  
+
 `Django`에서는 기본적으로 `CSRF` 토큰을 이용해 `CSRF` 공격을 방지합니다.  
 `CSRF(Cross Site Request Forgery)` 공격이란, 사용자가 자신의 의지와는 무관하게 공격자가 의도하는 행위를 특정 웹사이트에 요청하게 만드는 공격입니다.  
 `Django`에서는 이에 대응하기 위해서 `CsrfViewMiddleware`를 사용합니다. `settings.py`의 `MIDDLEWARE` 부분에 `'django.middleware.csrf.CsrfViewMiddleware',`가 있죠.  
 
-사용자의 요청이 서버로 넘어가 `view`에 도달하기 전에 토큰값을 확인하고 해당 값이 유효한지 확인하게 되는데요, 여기서 `{% csrf_token %}` 태그를 통해 토큰값을 생성하는 것입니다.  
+사용자의 요청이 서버로 넘어가 `view`에 도달하기 전에 토큰 값을 확인하고 해당 값이 유효한지 확인하게 되는데요, 여기서 `{% csrf_token %}` 태그를 통해 토큰값을 생성하는 것입니다.  
 `POST` 방식을 사용할 때 반드시 `{% csrf_token %}`을 `form`에 넣어주어야 한다는 점을 기억해 주세요. 태그를 넣지 않으면 에러가 발생합니다.  
+
+글 작성 페이지가 완성된 다음, 개발자 도구를 열어서 `{% csrf_token %}` 자리를 확인해 보면  
+```html
+<input type="hidden" name="csrfmiddlewaretoken" value="hBhA4tNjQw2qENjSsQqWX2SJab2rfqISJzofXoRlwnuOG2c3onaT5ORgmyrSqOvk">
+```
+와 같이 나오는 걸 확인할 수 있습니다. `value` 안의 값이 바로 토큰 값입니다.  
 
 <details>
   <summary><b>HTML 태그 설명</b></summary>
