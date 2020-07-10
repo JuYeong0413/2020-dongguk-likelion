@@ -177,8 +177,6 @@ urlpatterns = [
                     <div class="card" style="width: 18rem; margin-top: 20px;">
                         <div class="card-body">
                             <h5 class="card-title">{{ post.title }}</h5>
-                            <p class="card-text">{{ post.content }}</p>
-                            <p>{{ post.created_at }}</p>
                             <a href="#" class="btn btn-primary">상세보기</a>
                         </div>
                     </div>
