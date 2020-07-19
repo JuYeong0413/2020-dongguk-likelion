@@ -142,8 +142,7 @@ def main(request):
 `all_posts`라는 변수에 `Post` 객체를 모두 불러와서 담은 다음, `posts`앱의 `main.html`이라는 파일에 `posts`라는 이름으로 보내줍니다.  
 :bulb: `Django`에서 `render`의 세 번째 인자로는 `Python`의 딕셔너리(dictionary) 타입의 값을 넣어줘야 합니다.  
 
-또 주목해야 할 점은 첫 번째 줄에 `redirect`도 `import`가 된 걸 볼 수 있는데요, `render`는 html을 띄워주는 역할을 하는 반면 `redirect`는 다른 액션(함수)로 가는 역할을 합니다.  
-쉽게 말해, `URL`로 이동하는 겁니다.  
+또 주목해야 할 점은 첫 번째 줄에 `redirect`도 `import`가 된 걸 볼 수 있는데요, `render`는 html을 띄워주는 역할을 하는 반면 `redirect`는 다른 액션(함수)로 가는 역할을 합니다. 쉽게 말해, `URL`로 이동하는 겁니다.  
 우리가 앞서 `create`에서 블로그 메인 페이지로 이동하도록 했기 때문에, 글 목록을 보여주는 `posts`의 `main`으로 가도록 `return`부분을 수정해 줄게요.  
 
 ## URL  
