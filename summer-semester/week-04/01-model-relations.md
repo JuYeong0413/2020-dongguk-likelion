@@ -38,6 +38,7 @@ class Locker(models.Model):
 ## 1:N 관계 - `ForeignKey`  
 1:N 관계의 예시로는 우리가 학습한 게시글과 댓글을 생각할 수 있습니다.  
 하나의 글에는 여러 개의 댓글이 존재한다는 점을 생각하시면 됩니다.  
+
 `ForeignKey`를 N쪽에 해당하는 모델에 정의하며, 만약 자신을 참조하게 되는 경우에는 대상 클래스명에 `self`라고 적으면 됩니다.  
 ```python
 class Post(models.Model):
@@ -85,5 +86,38 @@ class Comment(models.Model):
 
 N(댓글) 쪽에서는 관계되어 있는 모델이 1(게시글)이므로 바로 접근이 가능하지만, 1(게시글) 쪽에서는 관계되어 있는 객체(댓글)가 많기 때문에 `set`을 통해서 접근할 수 있습니다.  
 
-## M:N - `ManyToManyField`  
-WIP
+## M:N 관계 - `ManyToManyField`  
+M:N 관계의 예시로는 수강신청을 생각할 수 있습니다. 한 명의 학생은 여러 개의 강의를 수강할 수 있고, 한 개의 강의는 여러 명의 학생들이 수강할 수 있죠.  
+
+`ManyToManyField`를 두 모델 중 어느 쪽에서 선언해도 무방하지만 주가 되는 모델에 정의하는 것이 좋습니다. 단, 먼저 선언된 모델에서 아래에 있는 모델을 지정할 때는 문자열로 표현을 합니다.  
+예시를 한번 보겠습니다.  
+```python
+class Student(models.Model):
+    ...
+    course = models.ManyToManyField('Course')
+
+class Course(models.Model):
+    ...
+```
+위와 같은 방법이 앞서 말씀드린
+> 먼저 선언된 모델에서 아래에 있는 모델을 지정할 때는 문자열로 표현을 합니다.  
+
+의 예시입니다. 먼저 선언된 `Student` 모델에서 아래에 있는 `Course` 모델을 지정하고 있기 때문에 `ManyToManyField`에서 `'Course'`와 같은 문자열 형태로 표현을 하고 있습니다.  
+```python
+class Student(models.Model):
+    ...
+    
+class Course(models.Model):
+    ...
+    student = models.ManyToManyField(Student)
+```
+강의(`course`)를 수강하는 학생들(`students`)을 알기 위해서는  
+```python
+>>> course.students.all()
+```
+와 같이 `all()`을 사용하며  
+특정 학생(`student`)이 수강하는 강의(`courses`)들을 알기 위해서는  
+```python
+>>> student.course_set.all()
+```
+과 같이 `set_all()`을 사용합니다.  
