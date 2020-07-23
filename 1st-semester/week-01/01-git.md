@@ -14,6 +14,7 @@
 ### Windows  
 https://git-scm.com/downloads  
 Windows를 눌러서 본인 운영체제에 맞는 `git`을 다운로드하시면 됩니다.  
+자세한 설치 과정은 [여기](https://www.notion.so/Git-1b709ee977a94a76a4efdb34cf7c07a3)를 참고해 주세요.  
 
 ### Mac  
 `brew`를 이용합니다.  
