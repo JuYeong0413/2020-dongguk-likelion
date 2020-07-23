@@ -30,10 +30,16 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
-SITE_ID=1
+SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 ```
-로그인 후 리다이렉트해주는 기본 url은 `/accounts/profile`로 지정되어 있는데 이를 메인 페이지인 `/`로 지정해 주었습니다. 다른 주소를 원한다면 해당 url의 이름을 적어주시면 됩니다.  
+`AUTHENTICATION_BACKENDS`는 리스트(list) 형식으로 작성하며, 위에서부터 auth를 진행합니다.  
+`django.contrib.auth.backends.ModelBackend`는 `Django`가 관리하는 auth를 의미하며 우리가 생성한 `superuser`로 로그인을 할 수 있게 해줍니다.  
+`allauth.account.auth_backends.AuthenticationBackend`는 이메일로 로그인하기 등 `Django-allauth`에서 제공하는 인증 방식입니다.  
+
+`SITE_ID`는 정수값으로, `django_site`라는 데이터베이스 테이블에 있는 현재 사이트의 값인데 우선 기본값인 1로 넣어주었습니다.  
+
+로그인 후 리다이렉트해주는 기본 url은 `/accounts/profile`로 지정되어 있는데 이를 메인 페이지인 `/`로 지정해 주었습니다. 다른 주소를 원한다면 해당 url을 적어주시면 됩니다.  
 
 ### myblog/urls.py  
 ```python
