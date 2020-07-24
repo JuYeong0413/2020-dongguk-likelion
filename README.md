@@ -55,6 +55,12 @@
   - [Update 기능 구현](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-03/01-update.md)  
   - [Delete 기능 구현](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-03/02-delete.md)  
   - [Media](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-03/03-media.md)  
+  
+  ### [4주차(07.22)](https://github.com/JuYeong0413/2020-dongguk-likelion/tree/master/summer-semester/week-04)  
+  - [모델 관계 개념](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-04/01-model-relations.md)  
+  - [Django-allauth](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-04/02-django-allauth.md)  
+  - [Django-allauth 템플릿 수정하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-04/03-django-allauth-custom.md)  
+  - [User](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-04/04-user.md)  
 </details>
 
 <details>
