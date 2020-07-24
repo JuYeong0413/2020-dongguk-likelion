@@ -89,6 +89,7 @@ $ python manage.py migrate
           <a class="nav-link" href="{% url 'account_signup' %}">회원가입</a>
         </li>
         {% endif %}
+        </ul>
     </div>
 </nav>
 ```
