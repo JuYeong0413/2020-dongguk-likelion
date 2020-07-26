@@ -88,9 +88,9 @@ path(경로, 해당하는 view),
 위와 같은 형식으로 작성합니다.  
 
 3가지 방법에 대한 예시가 제공되어 있는데,  
-- [함수형(function) view](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-04/page.md#%ED%95%A8%EC%88%98%ED%98%95-view)  
+- [함수형(function) view](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-04/04-page.md#%ED%95%A8%EC%88%98%ED%98%95-view)  
 - 클래스형(class-based) view  
-- [다른 `URLconf`를 포함하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-04/page.md#%EB%8B%A4%EB%A5%B8-urlconf-%ED%8F%AC%ED%95%A8%ED%95%98%EA%B8%B0)  
+- [다른 `URLconf`를 포함하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-04/04-page.md#%EB%8B%A4%EB%A5%B8-urlconf-%ED%8F%AC%ED%95%A8%ED%95%98%EA%B8%B0)  
 
 가 있습니다.  
 
