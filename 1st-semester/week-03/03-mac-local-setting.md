@@ -8,7 +8,7 @@ terminal을 열어서 `Python` 최신 버전이 설치가 잘 되었는지 확�
 $ python3 --version
 ```
 #### 3. `Django` 프로젝트를 관리할 디렉토리 만들기  
-terminal을 연 다음, [Linux 명령어](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-03/linux-commands.md)를 이용해 앞으로 장고 개발에 사용할 작업 디렉토리(폴더)를 만들어주고, 해당 디렉토리로 이동한 다음 `vs code`를 실행해주세요.  
+terminal을 연 다음, [Linux 명령어](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-03/01-linux-commands.md)를 이용해 앞으로 장고 개발에 사용할 작업 디렉토리(폴더)를 만들어주고, 해당 디렉토리로 이동한 다음 `vs code`를 실행해주세요.  
 ```bash
 $ mkdir [폴더이름]
 $ cd [폴더이름]
@@ -41,9 +41,9 @@ Chrome을 열어서 `127.0.0.1:8000` 또는 `localhost:8000`으로 들어갔을 
 `Ctrl + C` 키를 누르면 종료됩니다.  
   
 ## vs code  
-#### -`vs code` 설치하기  
+#### 1. `vs code` 설치하기  
 https://code.visualstudio.com/
-#### - terminal에서 `vs code` 열기  
+#### 2. terminal에서 `vs code` 열기  
 `vs code`를 실행시킬 디렉토리로 이동한 후  
 ```bash
 $ code .
