@@ -18,7 +18,7 @@ https://code.visualstudio.com/
 #### 4. [Git 설치하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-01/01-git.md#git-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C)  
 #### 5. `vs code` 환경설정  
 - 바탕화면에서 마우스 오른쪽 버튼 클릭, `Git Bash Here` 클릭  
-[Linux 명령어](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-03/linux-commands.md)를 이용해 앞으로 장고 개발에 사용할 작업 디렉토리(폴더)를 만들어주고, 해당 디렉토리로 이동한 다음 `vs code`를 실행해주세요.  
+[Linux 명령어](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-03/01-linux-commands.md)를 이용해 앞으로 장고 개발에 사용할 작업 디렉토리(폴더)를 만들어주고, 해당 디렉토리로 이동한 다음 `vs code`를 실행해주세요.  
 ```bash
 $ mkdir [폴더이름]
 $ cd [폴더이름]
