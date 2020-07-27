@@ -106,7 +106,7 @@ urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
         ...
         <div class="form-group">
             <label>이미지 첨부</label>
-            <input type="file", class="form-control" name="image" accept="image/*">
+            <input type="file" class="form-control" name="image" accept="image/*">
         </div>
         <input type="submit" value="글 작성" class="btn btn-outline-primary">
     </form>
