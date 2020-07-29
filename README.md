@@ -61,6 +61,10 @@
   - [Django-allauth](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-04/02-django-allauth.md)  
   - [Django-allauth 템플릿 수정하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-04/03-django-allauth-custom.md)  
   - [User](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-04/04-user.md)  
+  
+  ### [5주차(07.29)](https://github.com/JuYeong0413/2020-dongguk-likelion/tree/master/summer-semester/week-05)  
+  - UI/UX  
+  - [조회수 기능 구현](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-05/01-view-count.md)  
 </details>
 
 <details>
