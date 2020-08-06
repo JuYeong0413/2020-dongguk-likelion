@@ -80,7 +80,7 @@ class Comment(models.Model):
 >>> post = Post.objects.get(pk=1)
 >>> post.comment_set
 >>> post.comment_set.all()
->>> post.comment_Set.count()
+>>> post.comment_set.count()
 ```
 와 같이 특정 게시글의 댓글을 모두 확인할 수 있습니다.  
 
