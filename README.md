@@ -67,7 +67,7 @@
   - UI/UX  
   - [조회수 기능 구현](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-05/01-view-count.md)  
   
-  ### [6주차(08.05)]  
+  ### 6주차(08.05)  
   - CRUD 미니 해커톤  
   
 </details>
