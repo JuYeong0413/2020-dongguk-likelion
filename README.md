@@ -10,7 +10,7 @@
   - [Bootstrap](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-01/02-bootstrap.md)  
 
   ### 2주차(05.20)  
-  - 아이디어 발표  
+  - 아이디어 발표 :bulb:  
 
   ### [3주차(05.27)](https://github.com/JuYeong0413/2020-dongguk-likelion/tree/master/1st-semester/week-03)  
   - [자주 사용하는 Linux 명령어](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/1st-semester/week-03/01-linux-commands.md)  
@@ -68,7 +68,10 @@
   - [조회수 기능 구현](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-05/01-view-count.md)  
   
   ### 6주차(08.05)  
-  - CRUD 미니 해커톤  
+  - CRUD 미니 해커톤 :fire:  
+  
+  ### 7주차(08.12)  
+  - 친해지길 바라 :angel:  
   
 </details>
 
