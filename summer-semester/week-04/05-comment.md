@@ -15,7 +15,7 @@ class Comment(models.Model):
 
 댓글(`Comment`) 모델에는 다음과 같은 속성이 있습니다.  
 - 내용(`content`): 내용은 글자수가 많을 수 있으니 `TextField`를 사용하게 했습니다.  
-- 작성자(`writer`): 한 명의 작성자는 여러 개의 리뷰를 남길 수 있기 때문에 `1:N` 관계입니다. 따라서 `User`(사용자) 모델과 `ForeignKey` 관계를 설정해 주었습니다.  
+- 작성자(`writer`): 한 명의 유저는 여러 개의 댓글을 남길 수 있기 때문에 `1:N` 관계입니다. 따라서 `User`(사용자) 모델과 `ForeignKey` 관계를 설정해 주었습니다.  
 `on_delete` 속성에 대한 설명은 모델 관계 개념을 설명할 때 진행한 부분이므로 생략하겠습니다. 만약 기억이 안 난다면 [이곳](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-04/01-model-relations.md)을 클릭해 해당 복습자료를 다시 확인해 주시기 바랍니다.  
 - 게시글(`post`): 하나의 게시글에는 여러 개의 댓글이 달릴 수 있기 때문에 `1:N` 관계입니다. 따라서 `Post`(게시글) 모델과 `ForeignKey` 관계를 설정해 주었습니다.  
 
