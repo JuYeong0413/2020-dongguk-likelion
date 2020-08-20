@@ -73,6 +73,12 @@
   ### 7주차(08.12)  
   - 친해지길 바라 :angel:  
   
+  ### [8주차(08.19)](https://github.com/JuYeong0413/2020-dongguk-likelion/tree/master/summer-semester/week-08)  
+  - [게시글에 댓글 작성하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-08/01-comment-create.md)  
+  - [게시글에 작성된 댓글 보여주기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-08/02-comment-read.md)  
+  - [객체 정렬하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-08/03-model-order-by.md)  
+  - [Google 소셜로그인](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/summer-semester/week-08/04-google-social-login.pdf)  
+  
 </details>
 
 <details>
