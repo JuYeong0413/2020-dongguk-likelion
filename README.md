@@ -87,6 +87,14 @@
 <details>
   <summary>2학기</summary>
   
+  ## [2학기](https://github.com/JuYeong0413/2020-dongguk-likelion/tree/master/2nd-semester)  
+  ### [1주차(09.02)](https://github.com/JuYeong0413/2020-dongguk-likelion/tree/master/2nd-semester/week-01)  
+  - Github Page 만드는 방법  
+  - Github profile에 표시되는 README 파일 작성하기  
+  - [좋아요 모델](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/2nd-semester/week-01/01-like-model.md)  
+  - [좋아요 기능](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/2nd-semester/week-01/02-like-function.md)  
+  - [좋아요 누른 글 목록 확인하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/2nd-semester/week-01/03-like-list.md)  
+  
 </details>
 
 <details>
