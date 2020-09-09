@@ -95,6 +95,11 @@
   - [좋아요 기능](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/2nd-semester/week-01/02-like-function.md)  
   - [좋아요 누른 글 목록 확인하기](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/2nd-semester/week-01/03-like-list.md)  
   
+  ### [2주차](https://github.com/JuYeong0413/2020-dongguk-likelion/tree/master/2nd-semester/week-02)  
+  - [User 모델에 대응하는 Profile 모델](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/2nd-semester/week-02/01-user-profile.md)  
+  - [팔로우/팔로우 취소 기능](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/2nd-semester/week-02/02-follow.md)  
+  - [pdb를 이용한 디버깅 방법](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/2nd-semester/week-02/03-pdb.md)  
+  
 </details>
 
 <details>
