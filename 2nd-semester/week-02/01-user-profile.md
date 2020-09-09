@@ -51,3 +51,58 @@ class Profile(models.Model):
 - 팔로우: '구독'의 의미입니다.  
 - 팔로워: '나를' 구독(팔로우)하는 사람을 의미합니다.  
 - 팔로잉: '내가' 구독(팔로우)하는 사람을 의미합니다.  
+
+## Signal  
+자, 이렇게 `User` 모델에 대응하는 `Profile`을 만들었는데요, `OneToOneField`로 관계를 지정해주었다고 해서 새로운 `User` 객체가 생길 때(새로운 사용자가 가입했을 때) 자동적으로 `Profile` 객체가 생성되지 않습니다. 우리가 직접 `Profile` 객체를 만들어야 하는데요, 이 작업을 일일이 하면 정말 번거롭겠죠?  
+`Django`에서는 특정한 일(저장하기 전, 저장한 후, 삭제한 후, ...)을 수행할 때 동작을 지정해서 자동적으로 수행할 수 있는 기능을 가지고 있습니다. 그 기능을 **`signal`(신호)** 라고 합니다. `signal`에 대한 자세한 설명은 [공식 문서](https://docs.djangoproject.com/en/3.0/topics/signals/)를 확인해주시면 되겠습니다.  
+
+우리가 지금 필요한 `signal`은 `User` 모델이 새로 생성되어 저장이 된 이후에 1:1로 대응되는 `Profile` 객체를 생성해 주는 것이기 때문에 저장한 후에 동작을 하는 `signal`을 사용할 겁니다. 그 `signal`이 바로 `post_save`입니다.
+:bulb: `post_save`에서 `post`는 이후라는 의미를 가지고 있는 영어단어 `post`입니다. 우리가 이전에 만들었던 블로그 프로젝트에서의 게시글(post)이 아닙니다. HTTP 메서드 중에서 `POST` 방식을 의미하는 것도 아닙니다!  
+`signal`을 사용하기 위해서는 `receiver` 데코레이터를 이용해야 하는데요,
+
+```python
+from django.contrib.auth.models import User
+from django.db import models
+from django.dispatch import receiver
+from django.db.models.signals import post_save
+```
+`models.py` 상단에 이렇게 `receiver`와 사용할 `signal`을 `import`해야 합니다.  
+
+`signal`을 이용해서 선언한 함수는 `receiver function`이라고 부릅니다.  
+먼저 함수를 작성한 다음 차근차근 설명을 드리도록 하겠습니다.  
+
+```python
+@receiver(post_save, sender=User)
+def create_user_profile(sender, instance, created, **kwargs):
+    if created:
+        Profile.objects.create(user=instance)
+
+@receiver(post_save, sender=User)
+def save_user_profile(sender, instance, **kwargs):
+    instance.profile.save()
+```
+우선 `receiver`는 `sender`와 `keyword argument`를 받아야 하는 조건이 있습니다.  
+`sender`는 어떤 이벤트가 발생했을 때, 해당 이벤트가 발생했음을 시스템에 알려주는 주체입니다. 기본적으로 `Django`에 내장된 모델 관련 `signal`이 있고, 이러한 `signal`은 `Model` 클래스를 `sender`로 해서 작동합니다. 간단하게 말하면, 지금 상황에서 `sender`는 모델이 되는 겁니다.  
+모델 중에서도 `User` 모델과 관련해서 `save`가 작동한 이후에, 즉 `post_save`가 되면 위에 작성한 `receiver function`이 실행됩니다.  
+
+그럼 첫 번째 `create_user_profile`을 먼저 살펴볼게요.  
+`sender`는 위에 `receiver`에서 설정한 `sender=User`에서 알 수 있듯이 `User` 모델이 됩니다. `instance`는 가입하거나 변경된 `User`객체가 되고, `created`에는 새롭게 생성된(가입한) 사용자인지 `True` 또는 `False`값이 넘어옵니다.  
+`instance`에 왜 가입한 객체가 아니라 변경된 객체도 포함되나요:question: 그 이유는 바로 `signal`이 `post_save`이기 때문입니다. 저장된 이후이기 때문에, 생성된 다음 저장이 되었을 때랑 수정된 다음 저장이 되었을 때 모두 호출이 되는 것입니다.  
+마지막에 `**kwargs`에서 `kwargs`는 `keyword arguments`의 약자입니다. 위에서 `receiver`는 `sender`와 `keyword argument`를 받아야 하는 조건이 있다고 말씀드린 거 기억하시죠? 그래서 추가되는 부분인데요, `키워드 = 값`의 형태로 함수를 호출할 수 있으며 결과값이 딕셔너리 형태로 출력됩니다.  
+간단한 예시를 살펴보자면  
+```python
+# -*- coding utf-8 -*-
+def profile(**kwargs):
+    print(kwargs)
+```
+`profile`이라는 함수를 만들어서
+```python
+profile(name1="dongguk", name2="likelion")
+```
+위와 같이 실행해보면
+```python
+{'name1': 'dongguk', 'name2': 'likelion'}
+```
+이 출력되는 것을 확인할 수 있습니다.
+
+`**kwargs` 말고 `argument`의 약자인 `*args`도 있는데, 추가로 설명을 하면 여러분이 힘드실테니 `*args`에 대해 자세하게 알고 싶으신 분들은 직접 찾아보시기 바랍니다.  
