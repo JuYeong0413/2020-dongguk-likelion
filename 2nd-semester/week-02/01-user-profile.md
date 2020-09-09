@@ -106,3 +106,9 @@ profile(name1="dongguk", name2="likelion")
 이 출력되는 것을 확인할 수 있습니다.
 
 `**kwargs` 말고 `argument`의 약자인 `*args`도 있는데, 추가로 설명을 하면 여러분이 힘드실테니 `*args`에 대해 자세하게 알고 싶으신 분들은 직접 찾아보시기 바랍니다.  
+
+자, 이제 모델링이 완료되었으니 해야할 것은?
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
