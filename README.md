@@ -100,6 +100,10 @@
   - [팔로우/팔로우 취소 기능](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/2nd-semester/week-02/02-follow.md)  
   - [pdb를 이용한 디버깅 방법](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/2nd-semester/week-02/03-pdb.md)  
   
+  ### [3주차](https://github.com/JuYeong0413/2020-dongguk-likelion/tree/master/2nd-semester/week-03)  
+  - [ModelForm](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/2nd-semester/week-03/01-modelform.md)  
+  - [django-cripy-forms](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/2nd-semester/week-03/02-django-crispy-forms.md)  
+  
 </details>
 
 <details>
