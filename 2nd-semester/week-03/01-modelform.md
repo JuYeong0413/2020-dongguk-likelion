@@ -99,11 +99,11 @@ class PostForm(ModelForm):
         }
 
 
-        def save(self, **kwargs):
-            post = super().save(commit=False)
-            post.user = kwargs.get('user', None)
-            post.save()
-            return post
+    def save(self, **kwargs):
+        post = super().save(commit=False)
+        post.user = kwargs.get('user', None)
+        post.save()
+        return post
 ```
 `PostForm`을 한번 살펴볼게요.  
 입력받을 `fields`로는 `title`, `content`, `image` 세 가지를 담았습니다. `user`는 유저로부터 입력받지 않고, `view`에서 채워넣을 것이기 때문에에 제외합니다.  
