@@ -126,6 +126,7 @@ class PostForm(ModelForm):
 
 ## View  
 ### posts/views.py  
+#### create  
 ```python
 ...
 from .forms import PostForm
@@ -139,7 +140,7 @@ def create(request):
             return redirect('home')
     else:
         form = PostForm()
-        return render(request, 'posts/create.html', {'form': form})
+        return render(request, 'posts/post_form.html', {'form': form})
 ```
 자, 우선 상단에 우리가 새로 작성한 `PostForm`을 `import` 해줍시다.  
 기존에는 `title`, `content`, `image`, `user` 값을 일일이 요청으로부터 읽어와서 변수에 넣어주고, 그걸 가지고 새로운 게시글을 만들어 주었잖아요? 이제 그럴 필요가 없어졌습니다.  
@@ -154,19 +155,36 @@ def create(request):
 `POST`가 아닌 방식으로 요청이 날아온다면, `PostForm` 클래스의 객체를 만들어서 `form`이라는 변수에 넣어줍니다. 그리고 `html`을 띄울 때 딕셔너리 자료형으로 넣어서 전달해주도록 하겠습니다.  
 왜 `form`이라는 변수를 전달하냐고요? `form`에 담긴 `PostForm`을 이용해서 게시글 작성 페이지를 간단하게 만들 수 있기 때문이에요!  
 
+#### update  
+```python
+@login_required
+def update(request, id):
+    post = get_object_or_404(Post,pk = id)
+    form = PostForm(instance=post)
+    if request.method == "POST":
+        form = PostForm(request.POST, request.FILES, instance=post)
+        if form.is_valid():
+            form.save(user = request.user)
+        return redirect('home')
+    return render(request, 'posts/post_form.html', {'form': form})
+```
+먼저 수정을 할 게시글을 `id`값을 이용해 `get_object_or_404` 함수로 `post`라는 변수에 담아줍니다.  
+그리고 이번에 `PostForm`에는 `instance=post`라는 값을 넣어주었는데요, 이 부분으로 인해 수정할 때 기존에 저장되어 있는 데이터를 불러올 수 있게 됩니다.  
+그 이후는 `create`와 동일합니다.
+
 ## Template  
-### posts/templates/posts/create.html  
+### posts/templates/posts/post_form.html  
 ```html
 <div class="container">
-    <h2 class="mt-5">새로운 글 작성하기</h2>
-    <form action="{% url 'posts:create' %}" method="POST" enctype="multipart/form-data">
+    <form action="#" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }} # 각 필드가 paragraph 행으로 렌더링
-        <input type="submit" value="작성하기" class="btn btn-primary">
+        <input type="submit" value="확인" class="btn btn-primary">
     </form>
 </div>
 ```
-위와 같은 형태로 `view`에서 딕셔너리로 넘겨준 `form` 을 이용해 깔끔하게 글 작성 페이지를 보여줄 수 있게 되었습니다.  
+위와 같은 형태로 `view`에서 딕셔너리로 넘겨준 `form` 을 이용해 깔끔하게 글 작성과 수정 페이지를 보여줄 수 있게 되었습니다.  
+`form`의 `action` 속성이 `#`로 되어있는 것을 확인할 수 있는데요, `ModelForm`에서 알아서 적절한 `url`으로 넘겨줍니다.  
 `as_p`는 각각의 필드가 `paragraph`, 즉 `<p>`행으로 렌더링되도록 해 준 것이고, 만약 표 형태로 렌더링하고 싶다면
 ```html
 {{ form.as_table }}
