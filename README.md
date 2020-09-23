@@ -104,6 +104,9 @@
   - [ModelForm](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/2nd-semester/week-03/01-modelform.md)  
   - [django-cripy-forms](https://github.com/JuYeong0413/2020-dongguk-likelion/blob/master/2nd-semester/week-03/02-django-crispy-forms.md)  
   
+  ### 4주차  
+  - AWS EC2에 Django 프로젝트 배포하기  
+  
 </details>
 
 <details>
