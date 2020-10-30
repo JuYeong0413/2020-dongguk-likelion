@@ -110,6 +110,9 @@
   ### 5주차(10.07)  
   - 해커톤 오프닝  
   
+  ### 6주차(10.28)  
+  - JavaScript/jQuery  
+  
 </details>
 
 <details>
