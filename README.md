@@ -113,6 +113,9 @@
   ### 6주차(10.28)  
   - JavaScript/jQuery  
   
+  ### 7주차(11.04)  
+  - 좋아요 기능 Ajax로   
+  
 </details>
 
 <details>
